@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    user-select: none;
+    font-family: "Roboto", sans-serif;
+}
+
+/* header */
+/* bar */
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+header{
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.212) ;
+}
+.navbar {
+    display: flex;
+}
+.logo {
+    padding: 3rem;
+    width: 12rem;
+}
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+.navbar-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: larger;
+    color: rgba(53, 44, 44, 0.253);
+    text-decoration: none;
+    cursor: pointer;
+}
+.uil {
+    font-size: 2em;
+}
+@media (max-width:538px){
+    .hamburger{
+        display: block;
+        float: right;
+        padding: 10px;
+    }
+    .hamburger.active {
+        display: block;
+    }
+    .navbar-list{
+        position: fixed;
+        left: -100%;
+        top: 8rem;
+        gap: 10px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.096);
+        backdrop-filter: blur(7px);
+        transition: 0.2s;
+    }
+    .navbar-list.active{
+        left: 0;
+    }
+}
