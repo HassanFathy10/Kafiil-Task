@@ -14,20 +14,31 @@ body {
 .hamburger{
     display: none;
     cursor: pointer;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 header{
     width: 100%;
     z-index: 999;
     position: fixed;
-    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.212) ;
+    box-shadow: 0px 4px 26px 0px rgba(200, 200, 200, 0.55);
 }
 .navbar {
     display: flex;
 }
+.navbar-logo{
+    display: flex;
+    align-items: center;
+}
 .logo {
-    padding: 3rem;
-    width: 12rem;
+    width: 150px;
+    height: 42px;
+    padding-left: 2rem;
+}
+.user {
+    width:50px;
+    height: 50px;
+    border: 2px solid #1DBF73;
+    border-radius: 50px;
 }
 .navbar-list {
     display: flex;
@@ -35,6 +46,7 @@ header{
     align-items: center;
     list-style: none;
     padding: 10px;
+    margin-left: 25rem;
 }
 .navbar-link {
     display: flex;
@@ -46,9 +58,16 @@ header{
     text-decoration: none;
     cursor: pointer;
 }
-.uil {
-    font-size: 2em;
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    color: rgba(53, 44, 44, 0.253);
+    margin-left: auto;
+    padding-right: 2rem;
 }
+/* media query */
 @media (max-width:538px){
     .hamburger{
         display: block;
@@ -69,6 +88,7 @@ header{
         background-color: rgba(0, 0, 0, 0.096);
         backdrop-filter: blur(7px);
         transition: 0.2s;
+        margin-left: 0rem;
     }
     .navbar-list.active{
         left: 0;
