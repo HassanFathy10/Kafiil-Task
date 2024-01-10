@@ -14,9 +14,17 @@ document.querySelectorAll("navbar-link").forEach(link =>
 
 // user
 const userDropdown = () => {
-    const userToggle = document.querySelector('.profile')
-    userToggle.classList.toggle('activeUser')
+    const userToggle = document.querySelector('.profile');
+    userToggle.classList.toggle('activeUser');
 }
+// Add a click event listener to remove class active user when i clicked in any location 
+document.addEventListener('click', (event) => {
+    const userToggle = document.querySelector('.profile');
+    if (!userToggle.contains(event.target)) {
+        // Remove the 'activeUser' class
+        userToggle.classList.remove('activeUser')
+    }
+});
 // toggale button
 const toggleButton = () => {
     var button = document.getElementById('toggleButton');
