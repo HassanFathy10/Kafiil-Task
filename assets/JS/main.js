@@ -60,3 +60,42 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
+// checkbox logic
+// Button click event to toggle the state of checkboxes
+let selectAllBtn = document.getElementById('selectAllBtn');
+selectAllBtn.addEventListener('click', function () {
+    let checkboxes = document.getElementsByClassName('checkbox');
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = !checkboxes[i].checked;
+    }
+});
+// Counter
+let counter = 3;
+let counterMoney = 300;
+let updateCounter = () => {
+    document.getElementById('counter').innerHTML = counter;
+};
+let updatePrice = () => {
+    document.getElementById('price').innerHTML = counterMoney;
+};
+
+let increment = () => {
+    counter++;
+    updateCounter();
+};
+let decrement = () => {
+    if (counter > 0) {
+        counter--;
+        updateCounter();
+    }
+};
+let incrementMoney = () => {
+    counterMoney += 100;
+    updatePrice();
+}
+let decrementMoney = () => {
+    if (counterMoney >= 100) {
+        counterMoney -= 100;
+        updatePrice();
+    }
+};
