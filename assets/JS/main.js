@@ -13,3 +13,12 @@ document.querySelectorAll("navbar-link").forEach(link =>
     }));
 
 // user
+const userDropdown = () => {
+    const userToggle = document.querySelector('.profile')
+    userToggle.classList.toggle('activeUser')
+}
+// toggale button
+const toggleButton = () => {
+    var button = document.getElementById('toggleButton');
+    button.classList.toggle('activeButton');
+}
