@@ -158,8 +158,8 @@ ul li:hover {
 }
 /* button toggle */
 #toggleButton {
-    width: 50px;
-    height: 30px;
+    width: 40px;
+    height: 22px;
     background-color: #ccc; /* Default background color */
     position: relative;
     border-radius: 15px;
@@ -171,8 +171,8 @@ ul li:hover {
 #toggleButton::before {
     content: "";
     position: absolute;
-    width: 26px;
-    height: 26px;
+    width: 18px;
+    height: 18px;
     background-color: white;
     border-radius: 50%;
     top: 2px;
@@ -192,8 +192,9 @@ ul li:hover {
 .language {
     margin-left: auto;
 }
-.gap {
-    content: '';
+.language img{
+    border-left: 1px solid rgba(0, 0, 0, 0.192);
+    padding-left: 4px;
 }
 /* media query */
 @media (max-width:538px){
