@@ -30,3 +30,29 @@ const toggleButton = () => {
     var button = document.getElementById('toggleButton');
     button.classList.toggle('activeButton');
 }
+// wishlist
+const toggleWishlist = (event) => {
+    const icon = event.currentTarget;
+    icon.classList.toggle('active');
+    if (icon.classList.contains('active')) {
+        icon.classList.remove('uil', 'uil-heart-alt');
+        icon.classList.add('fa-solid', 'fa-heart');
+    } else {
+        icon.classList.remove('fa-solid', 'fa-heart');
+        icon.classList.add('uil', 'uil-heart-alt');
+    }
+};
+
+// swiper 
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 5,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});

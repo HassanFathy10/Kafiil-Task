@@ -24,7 +24,6 @@ body {
 header{
     width: 100%;
     z-index: 999;
-    position: fixed;
     box-shadow: 0px 4px 26px 0px rgba(200, 200, 200, 0.55);
 }
 .navbar {
@@ -64,6 +63,9 @@ header{
     text-decoration: none;
     cursor: pointer;
 }
+.auctions {
+    color: var(--green-color);
+}
 /* notifications */
 .notification {
     display: flex;
@@ -77,6 +79,8 @@ header{
 .notification-icons {
     position: relative;
     display: inline-block;
+    font-size: 1px;
+    cursor: pointer;
 }
 
 .notification-indicator {
@@ -245,4 +249,66 @@ ul li:hover {
     .navbar-list.active{
         left: 0;
     }
+}
+/* End Header */
+
+/* website sections */
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 500px; /* Two columns: 200px sidebar and flexible main content */
+    gap: 20px; /* Gap between columns */
+    padding: 20px;
+}
+
+/* Side content styles */
+.side-content {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+/* Main-content styles */
+.main-content {
+    /* background-color: #eee; */
+    padding: 20px;
+}
+.main-content .design-links a ,
+.design-links {
+    text-decoration: none;
+    color: #8692A6;
+    padding-bottom: 2rem;
+}
+.main-content .design-section a:hover {
+    color: #1DBF73;
+}
+.main-content .paragraph {
+    color: black;
+    font-size: large;
+}
+/* stars style */
+.rating {
+    padding-top: 50px;
+    display: flex;
+    gap: 1rem;
+}
+.rating span {
+    font-size: medium;
+    color: #333333c7;
+}
+.design-icons {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+.design-icons .uil {
+    font-size: 2rem;
+    color: rgba(53, 44, 44, 0.253);
+    cursor: pointer;
+}
+.design-icons i.active {
+    color: #ff6347; /* Change to your desired active color */
+}
+.fa-heart {
+    font-size: 2rem;
+    cursor: pointer;
+    padding-top: 2px;
 }
