@@ -64,6 +64,7 @@ header{
     text-decoration: none;
     cursor: pointer;
 }
+/* notifications */
 .notification {
     display: flex;
     align-items: center;
@@ -72,6 +73,28 @@ header{
     color: rgba(53, 44, 44, 0.253);
     margin-left: auto;
     padding-right: 2rem;
+}
+.notification-icons {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-indicator {
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--green-color);
+    border-radius: 50%;
+    display: none; /* Initially hidden */
+    font-size: 15px;
+    color: white;
+    padding: 4px;
+}
+
+.notification-icons .notification-indicator {
+    display: block; /* Show on hover */
 }
 .profile {
     cursor: pointer;
