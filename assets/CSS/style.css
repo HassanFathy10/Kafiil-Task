@@ -329,9 +329,15 @@ header{
     height: 100%;
     object-fit: cover;
 }
+.swiper-button-prev {
+    margin-left: 8px;
+}
+.swiper-button-next {
+    margin-right: 10px;
+}
 .swiper-button-prev,
 .swiper-button-next{
-    padding: 25px;
+    padding: 30px;
     border-radius: 50px;
     color: var(--green-color) !important;
     background-color: rgb(255, 252, 252);
