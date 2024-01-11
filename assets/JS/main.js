@@ -99,3 +99,70 @@ let decrementMoney = () => {
         updatePrice();
     }
 };
+
+// user post or comment 
+function postReview() {
+    // Get the value from the textarea
+    let userReviewText = document.getElementById('userReview').value;
+
+    // Create elements for the new review
+    let newReviewContainer = document.createElement('article');
+    newReviewContainer.classList.add('head-review');
+
+    // Create user image
+    let userImage = document.createElement('img');
+    userImage.src = './assets/img/user.jpg';
+    userImage.alt = 'Person';
+    userImage.classList.add('user-image');
+
+    // Create container for userName, reviewTime, and reviewPost
+    let userInfoContainer = document.createElement('article');
+    userInfoContainer.classList.add('user-info-container');
+
+    // Create username element
+    let userName = document.createElement('span');
+    // user name what i need
+    userName.innerText = 'Ahmed Ali';
+
+    // Create review time element
+    let reviewTime = document.createElement('span');
+    reviewTime.classList.add('review-time');
+    reviewTime.innerText = 'Just now'; 
+
+    // Create review post element
+    let reviewPost = document.createElement('article');
+    reviewPost.classList.add('review-post');
+
+    // Create review paragraph element
+    let reviewParagraph = document.createElement('p');
+    reviewParagraph.innerText = userReviewText;
+
+    // Create rating container
+    let ratingContainer = document.createElement('article');
+    ratingContainer.classList.add('rating-container');
+    
+    // Create rating element with stars based on user input
+    let rating = document.createElement('div');
+    rating.classList.add('rating');
+    
+    for (let i = 1; i <= 5; i++) {
+        let starIcon = document.createElement('i');
+        starIcon.classList.add('fas', 'fa-star', i <= userRating ? 'filled' : 'empty');
+        rating.appendChild(starIcon);
+    }
+
+    // Append the elements
+    reviewPost.appendChild(reviewParagraph);
+    userInfoContainer.appendChild(userName);
+    userInfoContainer.appendChild(reviewTime);
+    userInfoContainer.appendChild(reviewPost);
+    newReviewContainer.appendChild(userImage);
+    newReviewContainer.appendChild(userInfoContainer);
+
+    // Find the parent dynamically
+    var userReviewSection = document.querySelector('.user-review');
+    var parentElement = userReviewSection.parentElement;
+
+    // Insert the new review before the user review section
+    parentElement.insertBefore(newReviewContainer, userReviewSection);
+  }

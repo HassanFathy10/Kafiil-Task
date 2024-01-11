@@ -561,7 +561,7 @@ input[type=checkbox]
     display: flex;
     flex-direction: column;
 }
-.stars-review .review-time {
+.review-time {
     color: #0707076b;
 }
 .review-post{
@@ -579,7 +579,7 @@ input[type=checkbox]
     display: flex;
     gap: 40px;
 }
-.user-review img {
+.user-image {
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -599,4 +599,40 @@ input[type=checkbox]
 }
 .post-button:hover{
     background-color: var(--green-color);
+}
+ /* Suggested Services */
+.suggested-head {
+    display: flex;
+}
+.suggested-head span {
+    margin-left: auto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px;
+    letter-spacing: 0.09px;
+    color: #C3C5C8;
+}
+.user-review textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+}
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-s {
+    color: #FFC107; /* Color for filled stars */
+}
+
+.rating i.fas {
+    margin-right: 5px; /* Adjust the spacing between stars */
+}
+
+.rating i.far {
+    color: lightgray; /* Color for empty stars */
 }

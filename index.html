@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- Swiper.js Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
     <!-- IconScout -->   
@@ -427,12 +428,27 @@
                         </article>
                         <!-- user review -->
                         <article class="user-review">
-                            <article>
-                                <img class="" src="./assets/img/user.jpg" alt=""/>
+                            <article >
+                              <img class="user-image" src="./assets/img/user.jpg" alt=""/>
                             </article>
-                            <button class="post-button">Post Review</button>
-                        </article>
+                            <label for="userRating">Your Rating:</label>
+                            <input type="number" id="userRating" min="1" max="5" value="1" />
+                            <label>
+                              <textarea id="userReview"></textarea>
+                            </label>
+                            <button class="post-button" onclick="postReview()">Post Review</button>
+                          </article>
                     </article>
+                </article>
+            </article>
+            <!-- Suggested Services -->
+            <article class="suggested-section">
+                <article class="suggested-head">
+                    <h2>Suggested Services</h2>
+                    <span>see more</span>
+                </article>
+                <article class="suggested-body">
+
                 </article>
             </article>
         </article>
