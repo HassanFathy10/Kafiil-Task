@@ -14,6 +14,13 @@ body {
     overflow-x: hidden;
 }
 /* header */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0px 4px 26px 0px rgba(200, 200, 200, 0.55);
+}
 /* bar */
 .hamburger{
     display: none;
@@ -22,10 +29,6 @@ body {
 }
 .uil {
     font-size: 1.2rem;
-}
-header{
-    width: 100%;
-    box-shadow: 0px 4px 26px 0px rgba(200, 200, 200, 0.55);
 }
 .navbar {
     display: flex;
@@ -51,7 +54,7 @@ header{
     align-items: center;
     list-style: none;
     padding: 10px;
-    margin-left: 10rem;
+    margin-left: 30rem;
     gap: 10px;
 }
 .navbar-link {
@@ -115,7 +118,7 @@ header{
     background-color: white;
     border-radius: 10px;
     margin-top: 0.7rem;
-    margin-left: -14.8rem;
+    margin-left: -15rem;
     width: 15%;
     padding: 10px;
     border-radius: 10px;
@@ -243,6 +246,9 @@ header{
     grid-column: span 8;
     padding: 20px;
 }
+.design-section {
+    margin-top: 6rem;
+}
 .main-content .design-links a ,
 .design-links {
     text-decoration: none;
@@ -292,6 +298,7 @@ header{
     width: 85%;
     height: 85%;
     margin-bottom: 50px;
+    position: relative;
 }
 .swiper-slide img {
     width: 100%;
@@ -304,12 +311,16 @@ header{
 .swiper-button-next {
     margin-right: 10px;
 }
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgb(255, 252, 252);
+}
 .swiper-button-prev,
 .swiper-button-next{
     padding: 30px;
     border-radius: 50px;
     color: var(--green-color) !important;
-    background-color: rgb(255, 252, 252);
+    background-color: rgba(255, 252, 252, 0.301);
     box-shadow: 0px 0px 10px 4px rgba(3, 3, 3, 0.219);
 }
 .swiper-button-prev::after,
@@ -392,27 +403,20 @@ header{
     accent-color: rgb(12, 124, 12);
 }
 .checkbox {
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;    
     border: 1px solid #ddd;
     appearance: none;
     cursor: pointer;
+    transform: scale(2.8);
+    margin-top: 5px;
 }
 .checkbox:checked {
     appearance: auto;
     clip-path: circle(45% at 50% 50%);
+    transform: scale(3);
 }
-input[type=checkbox]
-{
-  /* Double-sized Checkboxes */
-  -ms-transform: scale(1.5); /* IE */
-  -moz-transform: scale(1.5); /* FF */
-  -webkit-transform: scale(1.5); /* Safari and Chrome */
-  -o-transform: scale(1.5); /* Opera */
-  transform: scale(1.5);
-}
-
 /* purchase-section */
 .purchase-body {
     display: flex;
@@ -725,6 +729,7 @@ input[type=checkbox]
 .side-content {
     grid-column: span 2;
     padding: 20px;
+    margin-top: 7rem;
 }
 .side-content .card-list {
     display: flex;
@@ -860,18 +865,15 @@ input[type=checkbox]
 
 /* Media Query */
 @media (max-width: 1440px) {
-    body {
-        font-size: 1px;
-    }
     .navbar-list {
         margin-right: auto;
     }
     .side-content {
-        grid-column: span 3;
+        grid-column: span 2;
         width: fit-content;
     }
     .main-content {
-        grid-column: span 5;
+        grid-column: span 6;
     }
 }
 @media (max-width: 1350px){
@@ -891,7 +893,7 @@ input[type=checkbox]
         width: 100%;
         flex-direction: column;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.096);
+        background-color: rgba(255, 255, 255, 0.979);
         backdrop-filter: blur(7px);
         transition: 0.2s;
         margin-left: 0rem;
@@ -908,6 +910,10 @@ input[type=checkbox]
     body {
         font-size: 14px;
     }
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(450px, 1fr));
+    } 
     .suggested-body{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -925,6 +931,14 @@ input[type=checkbox]
     .side-content {
         width: fit-content;
     }
+    .rating-details span svg {
+        height: 20px;
+        width: 20px;
+        padding-top: 1px;
+    }
+    .rating-section h2 svg {
+        height: 20px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -937,30 +951,69 @@ input[type=checkbox]
     body {
         font-size: 0.625rem; /* 10px */
     }
+    header {
+        width: 100%;
+    }
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(350px, 1fr));
+    } 
     .suggested-body {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, minmax(350px, 1fr));
         gap: 20px; /* Adjust the gap as needed */
     }
-
+    .rating-section,
+    .rating-review {
+        width: fit-content;
+    }
     .design-rating svg {
         width: 5rem;
         font-size: 0.2rem;
     }
-
     .design-rating span {
         font-size: 1rem;
     }
-
     .design-section .paragraph {
         font-size: 1rem;
     }
-
+    .service-header .service-select,
+    .service-header i {
+        font-size: 1rem;
+    }
     .design-icons .uil {
         font-size: 1.2rem;
     } 
-
     .design-icons .fa-heart {
         font-size: 1.2rem;
+    }
+    .rating-section h2 svg {
+        height: 15px;
+    }
+    .rating-details span svg {
+        height: 15px;
+        width: 15px;
+        padding-top: 1px;
+    }
+    /* swiper */
+    .swiper {
+        width: 100%;
+        height: 60%;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    .swiper-button-prev {
+        margin-right: 50rem;
+    }
+    .swiper-button-next {
+        margin-left: 50rem;
+    }
+    .swiper-pagination {
+        margin-bottom: 20px;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 1.2rem !important; 
+        font-weight: bolder;
     }
 }
