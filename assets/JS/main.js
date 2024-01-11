@@ -104,11 +104,10 @@ let decrementMoney = () => {
 function postReview() {
     // Get the value from the textarea
     let userReviewText = document.getElementById('userReview').value;
-
+    let userRating = parseInt(document.getElementById('userRating').value);
     // Create elements for the new review
     let newReviewContainer = document.createElement('article');
     newReviewContainer.classList.add('head-review');
-
     // Create user image
     let userImage = document.createElement('img');
     userImage.src = './assets/img/user.jpg';
@@ -140,11 +139,11 @@ function postReview() {
     // Create rating container
     let ratingContainer = document.createElement('article');
     ratingContainer.classList.add('rating-container');
-    
+
     // Create rating element with stars based on user input
-    let rating = document.createElement('div');
-    rating.classList.add('rating');
-    
+    let rating = document.createElement('article');
+    rating.classList.add('rating-s');
+
     for (let i = 1; i <= 5; i++) {
         let starIcon = document.createElement('i');
         starIcon.classList.add('fas', 'fa-star', i <= userRating ? 'filled' : 'empty');
@@ -156,6 +155,7 @@ function postReview() {
     userInfoContainer.appendChild(userName);
     userInfoContainer.appendChild(reviewTime);
     userInfoContainer.appendChild(reviewPost);
+    userInfoContainer.appendChild(ratingContainer);
     newReviewContainer.appendChild(userImage);
     newReviewContainer.appendChild(userInfoContainer);
 

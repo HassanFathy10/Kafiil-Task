@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Swiper.js Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
     <!-- IconScout -->   
@@ -431,13 +431,15 @@
                             <article >
                               <img class="user-image" src="./assets/img/user.jpg" alt=""/>
                             </article>
-                            <label for="userRating">Your Rating:</label>
-                            <input type="number" id="userRating" min="1" max="5" value="1" />
-                            <label>
-                              <textarea id="userReview"></textarea>
-                            </label>
-                            <button class="post-button" onclick="postReview()">Post Review</button>
-                          </article>
+                            <article class="input-review">
+                                <label for="userRating">Your Rating:</label>
+                                <input type="number" id="userRating" min="1" max="5" value="1" />
+                                <label>
+                                  <textarea id="userReview" placeholder="Write your review in here (Try It)" rows="7"></textarea>
+                                </label>
+                                <button class="post-button" onclick="postReview()">Post Review</button>
+                            </article>
+                        </article>
                     </article>
                 </article>
             </article>
