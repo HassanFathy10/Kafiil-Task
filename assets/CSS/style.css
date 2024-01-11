@@ -864,6 +864,24 @@ header{
     color: red;
     font-size: 1rem;
 }
+/* footer */
+footer {
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+footer a {
+    text-decoration: none;
+    color: #00ff00;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
 
 /* Media Query */
 @media (max-width: 1440px) {
