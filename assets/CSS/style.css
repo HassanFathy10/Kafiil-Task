@@ -683,6 +683,24 @@ input[type=checkbox]
     padding: 20px;
     width: 100%;
 }
+.suggested-wish {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+.suggested-wish .uil {
+    padding: 1px;
+    font-size: 2rem;
+}
+.suggested-wish .fa-heart {
+    padding: 5px;
+    color: red;
+}
 .card {
     margin-bottom: 40px;
     border-radius: 12px;
@@ -691,6 +709,9 @@ input[type=checkbox]
 .card-body p {
     padding: 20px;
     font-weight: 600;
+}
+.card-image{
+    position: relative;
 }
 .card-image img{
     width: 100%;
@@ -869,3 +890,42 @@ input[type=checkbox]
 }
 
 /* Media Query */
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    .suggested-body{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .suggested-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .side-content {
+        width: fit-content;
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 577px) {
+    body {
+        font-size: 10px;
+    }
+    .side-content {
+        width: fit-content;
+    }
+}
