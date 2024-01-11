@@ -550,13 +550,53 @@ input[type=checkbox]
     border-radius: 12px;
     box-shadow: 0px 3px 30px 10px rgba(32, 32, 32, 0.07);
 }
-.person-review {
+/* person-review */
+.person-review span {
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight:bolder;
+    font-family: Montserrat;
+}
+.stars-review {
     display: flex;
     flex-direction: column;
 }
-.person-review span {
-    padding-bottom: 10px;
-    font-size: 14px;
-    font-weight:bolder;
-    font-family: Montserrat;
+.stars-review .review-time {
+    color: #0707076b;
+}
+.review-post{
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.head-review {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+/* user review */
+.user-review {
+    display: flex;
+    gap: 40px;
+}
+.user-review img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.post-button{
+    background-color:#149c5d;
+    color: white;
+    width: 185px;
+    height: 48px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+.post-button:hover{
+    background-color: var(--green-color);
 }
