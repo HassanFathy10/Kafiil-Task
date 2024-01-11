@@ -151,8 +151,8 @@ function postReview() {
     reviewPost.appendChild(reviewParagraph);
     userInfoContainer.appendChild(userName);
     userInfoContainer.appendChild(reviewTime);
-    userInfoContainer.appendChild(reviewPost);
     userInfoContainer.appendChild(rating);
+    userInfoContainer.appendChild(reviewPost);
     newReviewContainer.appendChild(userImage);
     newReviewContainer.appendChild(userInfoContainer);
 

@@ -327,7 +327,7 @@ header{
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .swiper-button-prev,
 .swiper-button-next{
@@ -619,13 +619,12 @@ input[type=checkbox]
     background-color: #F6F6F6;
     border-radius: 12px;
     margin-bottom: 10px;
-    padding: 40px;
+    padding: 20px;
     font-size: 1.2rem;
 }
 .user-review textarea::placeholder{
     font-size: 1.3rem;
     font-weight: 400;
-    padding: 3.5px;
     color: #8692A6;
 }
 .user-info-container {
@@ -658,19 +657,59 @@ input[type=checkbox]
     margin-top: 5px;
 }
 /* suggested-body */
+.suggested-head h2 {
+    margin-bottom: 20px;
+}
+.suggested-head span {
+    cursor: pointer;
+}
 .suggested-body{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    padding: 20px;
+    width: 100%;
 }
 .card {
-    grid-area: span 1;
+    border-radius: 12px;
     box-shadow: 0px 3px 30px 10px rgba(32, 32, 32, 0.07);
+}
+.card-image img{
+    width: 100%;
+    object-fit: cover;
 }
 .card-paragraph {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.08px;
 }
+.card-details span {
+    color: #8692A6;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.08px;
+}
 .card-list {
+    display: flex;
     list-style: none;
+    gap: 20px;
+}
+.card-info {
+    padding: 20px;
+    line-height: 3rem;
+}
+.list-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.list-tag {
+    margin-left: auto;
+    font-size: 1.4rem;
+}
+.list-tag span {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.list-tag .fa-tag {
+    color: var(--green-color);
 }
