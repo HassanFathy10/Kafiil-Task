@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
+
 // checkbox logic
 // Button click event to toggle the state of checkboxes
 let selectAllBtn = document.getElementById('selectAllBtn');
