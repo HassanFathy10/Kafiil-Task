@@ -25,7 +25,6 @@ body {
 }
 header{
     width: 100%;
-    z-index: 999;
     box-shadow: 0px 4px 26px 0px rgba(200, 200, 200, 0.55);
 }
 .navbar {
@@ -52,7 +51,7 @@ header{
     align-items: center;
     list-style: none;
     padding: 10px;
-    margin-left: 35rem;
+    margin-left: 10rem;
     gap: 10px;
 }
 .navbar-link {
@@ -230,33 +229,6 @@ header{
     border-left: 1px solid rgba(0, 0, 0, 0.192);
     padding-left: 4px;
 }
-/* media query */
-@media (max-width:538px){
-    .hamburger{
-        display: block;
-        float: right;
-        padding: 10px;
-    }
-    .hamburger.active {
-        display: block;
-    }
-    .navbar-list{
-        position: fixed;
-        left: -100%;
-        top: 3.5rem;
-        gap: 10px;
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.096);
-        backdrop-filter: blur(7px);
-        transition: 0.2s;
-        margin-left: 0rem;
-    }
-    .navbar-list.active{
-        left: 0;
-    }
-}
 /* End Header */
 
 /* website sections */
@@ -269,7 +241,6 @@ header{
 /* Main-content styles */
 .main-content {
     grid-column: span 8;
-    /* background-color: #eee; */
     padding: 20px;
 }
 .main-content .design-links a ,
@@ -289,12 +260,12 @@ header{
     font-weight: 700;
 }
 /* stars style */
-.rating {
+.design-rating {
     padding-top: 50px;
     display: flex;
     gap: 1rem;
 }
-.rating span {
+.design-rating span {
     font-size: medium;
     color: #333333c7;
 }
@@ -449,7 +420,7 @@ input[type=checkbox]
     justify-content: center;
     margin-top: 20px;
     padding: 20px;
-    width: 80%;
+    width: 100%;
     gap: 10px;
     border-radius: 15px;
     box-shadow: 0px 3px 30px 10px rgba(32, 32, 32, 0.07);
@@ -612,7 +583,7 @@ input[type=checkbox]
 .post-button:hover{
     background-color: var(--green-color);
 }
- /* Suggested Services */
+/* Suggested Services */
 .suggested-head {
     display: flex;
 }
@@ -646,15 +617,15 @@ input[type=checkbox]
 }
 /* rating post */
 .rating-s {
-    color: #FFC107; /* Color for filled stars */
+    color: #FFC107; 
 }
 
 .rating i.fas {
-    margin-right: 5px; /* Adjust the spacing between stars */
+    margin-right: 5px;
 }
 
 .rating i.far {
-    color: lightgray; /* Color for empty stars */
+    color: lightgray;
 }
 .user-review .input-review {
     width: 100%;
@@ -680,8 +651,6 @@ input[type=checkbox]
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
-    padding: 20px;
-    width: 100%;
 }
 .suggested-wish {
     display: flex;
@@ -890,6 +859,50 @@ input[type=checkbox]
 }
 
 /* Media Query */
+@media (max-width: 1440px) {
+    body {
+        font-size: 1px;
+    }
+    .navbar-list {
+        margin-right: auto;
+    }
+    .side-content {
+        grid-column: span 3;
+        width: fit-content;
+    }
+    .main-content {
+        grid-column: span 5;
+    }
+}
+@media (max-width: 1350px){
+    .hamburger{
+        display: block;
+        float: right;
+        padding: 10px;
+    }
+    .hamburger.active {
+        display: block;
+    }
+    .navbar-list{
+        position: fixed;
+        left: -100%;
+        top: 3.5rem;
+        gap: 10px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.096);
+        backdrop-filter: blur(7px);
+        transition: 0.2s;
+        margin-left: 0rem;
+    }
+    .navbar-list.active{
+        left: 0;
+    }
+    .side-content {
+        width: fit-content;
+    }
+}
 
 @media (max-width: 576px) {
     body {
@@ -897,7 +910,7 @@ input[type=checkbox]
     }
     .suggested-body{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -911,7 +924,6 @@ input[type=checkbox]
     }
     .side-content {
         width: fit-content;
-        display: flex;
     }
 }
 
@@ -923,9 +935,32 @@ input[type=checkbox]
 
 @media (min-width: 320px) and (max-width: 577px) {
     body {
-        font-size: 10px;
+        font-size: 0.625rem; /* 10px */
     }
-    .side-content {
-        width: fit-content;
+    .suggested-body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px; /* Adjust the gap as needed */
+    }
+
+    .design-rating svg {
+        width: 5rem;
+        font-size: 0.2rem;
+    }
+
+    .design-rating span {
+        font-size: 1rem;
+    }
+
+    .design-section .paragraph {
+        font-size: 1rem;
+    }
+
+    .design-icons .uil {
+        font-size: 1.2rem;
+    } 
+
+    .design-icons .fa-heart {
+        font-size: 1.2rem;
     }
 }
