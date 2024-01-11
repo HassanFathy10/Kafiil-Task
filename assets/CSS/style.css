@@ -261,16 +261,9 @@ header{
     gap: 1rem;
     padding: 20px;
 }
-/* Side content styles */
-.side-content {
-    grid-column: span 2;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
 /* Main-content styles */
 .main-content {
-    grid-column: span 6;
+    grid-column: span 8;
     /* background-color: #eee; */
     padding: 20px;
 }
@@ -347,6 +340,18 @@ header{
 .swiper-button-next::after {
   font-size: 1.9rem !important; 
   font-weight: bolder;
+}
+.swiper-pagination {
+    padding: 80px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px; 
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #00ff00; /* Set your desired active bullet color */
 }
 /* description section */
 .description h2 {
@@ -677,11 +682,16 @@ input[type=checkbox]
     width: 100%;
 }
 .card {
+    margin-bottom: 40px;
     border-radius: 12px;
     box-shadow: 0px 3px 30px 10px rgba(32, 32, 32, 0.07);
 }
+.card-body p {
+    padding: 20px;
+    font-weight: 600;
+}
 .card-image img{
-    width: 100%;
+    width: 80%;
     object-fit: cover;
 }
 .card-paragraph {
@@ -718,4 +728,140 @@ input[type=checkbox]
 }
 .list-tag .fa-tag {
     color: var(--green-color);
+}
+/* Side content styles */
+.side-content {
+    grid-column: span 2;
+    padding: 20px;
+}
+.side-content .card-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding: 10px;
+}
+.side-content .card-icons {
+    background-color: #F6F6F6;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 10px;
+}
+.card-body-info {
+    display: flex;
+}
+.card-body-info p{
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.07px;
+}
+.card-body button {
+    background-color:#149c5d;
+    color: white;
+    margin: 20px;
+    width: 90%;
+    height: 48px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+/* Info card */
+.side-content .card h3 {
+    padding: 20px;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    list-style: none;
+
+}
+.card-info .list-type {
+    display: flex;
+    gap: 10px;
+}
+.list-type span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.list-value {
+    padding: 10px;
+    margin-left: auto;
+    list-style: none;
+    text-align: center;
+    line-height: 3rem;
+}
+.list-value li {
+    font-weight: 600;
+    font-size: 1rem;
+}
+/* share-card */
+.share-card h3 {
+    font-weight: 600;
+}
+.share-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+.share-links li {
+    cursor: pointer;
+}
+/* Seller Other Services */
+.seller-head {
+    display: flex;
+    padding-bottom: 40px;
+}
+.seller-head span {
+    margin-left: auto;
+    color: #C3C5C8;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.seller-body {
+    display: flex;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0px 3px 30px 10px rgba(32, 32, 32, 0.07);
+}
+.seller-body img {
+    object-fit: cover;
+    width: 50%;
+    border-radius: 14px 0 0 12px;
+}
+.seller-body p {
+    padding: 10px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.seller-details {
+    display: flex;
+    gap: 10px;
+}
+.seller-details span{
+    color: #8692A6;
+}
+.seller-details .fa-star{
+    padding-top: 2px;
+    padding-left: 4px;
+    color: gold;
+}
+.seller-details .fa-tag {
+    padding-top: 2px;
+    color: var(--green-color);
+}
+.seller-details .seller-price {
+    font-weight: 700;
+    color: black;
+}
+.seller-details .fa-heart {
+    color: red;
+    font-size: 1rem;
 }
