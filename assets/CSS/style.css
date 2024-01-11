@@ -9,6 +9,7 @@
 }
 body {
     user-select: none;
+    /* fonts in design */
     font-family: Montserrat;
     overflow-x: hidden;
 }
@@ -260,7 +261,6 @@ header{
     gap: 1rem;
     padding: 20px;
 }
-
 /* Side content styles */
 .side-content {
     grid-column: span 2;
@@ -279,13 +279,16 @@ header{
     text-decoration: none;
     color: #8692A6;
     padding-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 .main-content .design-section a:hover {
     color: #1DBF73;
 }
 .main-content .paragraph {
     color: black;
-    font-size: large;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 /* stars style */
 .rating {
@@ -349,6 +352,7 @@ header{
     border-radius: 15px;
     background: var(--base-white, #FFF);
     box-shadow: 0px 3px 30px 10px rgba(32, 32, 32, 0.07);
+    font-weight: 600;
 }
 /* service section */
 .service {
@@ -381,6 +385,9 @@ header{
     display: flex;
     gap: 20px;
 }
+.service-check p {
+    font-weight: 600;
+}
 .service-body ul {
     display: flex;
     list-style: none;
@@ -392,6 +399,7 @@ header{
     border-radius: 10px;
     padding: 5px;
     color: green;
+    font-weight: 600;
 }
 /* change color ckeckbox */
 #ch1,
@@ -509,6 +517,7 @@ input[type=checkbox]
     flex-wrap: wrap;
     gap: 20px;
     font-size: 1.3em;
+    font-weight: 500;
 }
 .rating-result {
     display: flex;
@@ -548,6 +557,6 @@ input[type=checkbox]
 .person-review span {
     padding-bottom: 10px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight:bolder;
     font-family: Montserrat;
 }
