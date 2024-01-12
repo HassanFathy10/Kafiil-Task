@@ -812,6 +812,9 @@ header{
     cursor: pointer;
 }
 /* Seller Other Services */
+.seller-section {
+    margin-top: 20px;
+}
 .seller-head {
     display: flex;
     padding-bottom: 40px;
