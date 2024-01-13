@@ -997,7 +997,10 @@ footer a {
     .rating-section h2 svg {
         height: 20px;
     }
-
+    footer p,
+    footer a{
+        font-size: 1em;
+    }
 }
 @media (min-width: 769px) {
     body {
@@ -1084,6 +1087,10 @@ footer a {
         right: -10%; /* Adjust the left position for larger screens */
         transform: translateX(-50%);
     }
+    footer p,
+    footer a{
+        font-size: 1.5em;
+    }
 }
 @media (max-width: 280px) {
     .swiper {
@@ -1097,5 +1104,12 @@ footer a {
     .profile .menu {
         right: -8.5%; /* Adjust the left position for larger screens */
         transform: translateX(-50%);
+    }
+    footer {
+        width: fit-content;
+    }
+    footer p,
+    footer a{
+        font-size: 1em;
     }
 }
