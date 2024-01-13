@@ -198,7 +198,7 @@ header{
 #toggleButton {
     width: 40px;
     height: 22px;
-    background-color: #ccc; /* Default background color */
+    background-color: #ccc; 
     position: relative;
     border-radius: 15px;
     transition: background-color 0.3s ease;
@@ -868,6 +868,10 @@ header{
     font-size: 1rem;
 }
 /* footer */
+footer {
+    width: 100%;
+    box-sizing: border-box;
+  }
 .footer {
     background-color: black;
     padding: 50px;
@@ -1092,6 +1096,9 @@ footer a {
         right: -10%; /* Adjust the left position for larger screens */
         transform: translateX(-50%);
     }
+    footer {
+        width: 100% !important;
+    }
     footer p,
     footer a .footer-link{
         font-size: 1.5em;
@@ -1109,6 +1116,9 @@ footer a {
     .profile .menu {
         right: -8.5%; /* Adjust the left position for larger screens */
         transform: translateX(-50%);
+    }
+    footer {
+        width: 100% !important;
     }
     footer p,
     footer a .footer-link{
