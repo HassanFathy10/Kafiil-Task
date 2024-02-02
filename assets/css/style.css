@@ -1104,7 +1104,26 @@ footer a {
         font-size: 1.5em;
     }
 }
-@media (max-width: 280px) {
+@media (max-width: 320px) {
+    .design-section {
+        padding-top: 50px;
+    }
+    .rating-section,
+    .service,
+    .purchase,
+    .design-section,
+    .description {
+        margin: 20px;
+    }
+    .suggested-head {
+        margin: 40px;
+    }
+    .suggested-body {
+        margin: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(350px, 1fr));
+        gap: 2px; /* Adjust the gap as needed */
+    }   
     .swiper {
         width: 90%;
         height: 60%;
@@ -1116,9 +1135,6 @@ footer a {
     .profile .menu {
         right: -8.5%; /* Adjust the left position for larger screens */
         transform: translateX(-50%);
-    }
-    footer {
-        width: 100% !important;
     }
     footer p,
     footer a .footer-link{
