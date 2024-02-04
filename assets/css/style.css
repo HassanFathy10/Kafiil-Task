@@ -948,7 +948,7 @@ footer a {
     .navbar-list{
         position: fixed;
         left: -100%;
-        top: 3.5rem;
+        top: 3.4rem;
         gap: 10px;
         width: 100%;
         flex-direction: column;
