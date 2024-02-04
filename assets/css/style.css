@@ -495,7 +495,7 @@ header{
     border-radius: 12px;
     box-shadow: 0px 3px 30px 10px rgba(32, 32, 32, 0.07);
     list-style: none;
-    padding: 20px;
+    padding: 10px;
 }
 .rating-body ul li {
     display: flex;
@@ -514,10 +514,12 @@ header{
     flex-wrap: wrap;
     gap: 20px;
     margin-left: auto;
+    width: 100%;
+
 }
 .rating-result .result {
     margin-top: 8px;
-    width: 311px;
+    width: 100%;
     height: 8px;
     background-color: #E6EAEF;
     position: relative;
@@ -1027,6 +1029,12 @@ footer a {
     body {
         font-size: 0.625rem; /* 10px */
     }
+    .service,
+    .purchase,
+    .design-section,
+    .description {
+        margin-right: 50px;
+    }
     header {
         width: 100%;
     }
@@ -1034,14 +1042,24 @@ footer a {
         display: grid;
         grid-template-columns: repeat(1, minmax(350px, 1fr));
     } 
-    .suggested-body {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(350px, 1fr));
-        gap: 20px; /* Adjust the gap as needed */
+    .suggested-section {
+        width: fit-content;
     }
-    .rating-section,
+    .suggested-head {
+        margin-right: 40px;
+    }
+    .suggested-body {
+        margin-right: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(50px, 1fr));
+        gap: 10px; /* Adjust the gap as needed */
+    }  
+    .rating-section{
+        margin-right: 40px;
+    }
     .rating-review {
         width: fit-content;
+        margin-right: 40px;
     }
     .design-rating svg {
         width: 5rem;
