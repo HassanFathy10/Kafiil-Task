@@ -495,7 +495,7 @@ header{
     border-radius: 12px;
     box-shadow: 0px 3px 30px 10px rgba(32, 32, 32, 0.07);
     list-style: none;
-    padding: 10px;
+    padding: 20px;
 }
 .rating-body ul li {
     display: flex;
@@ -884,7 +884,7 @@ footer {
 }
 footer p {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 footer a {
