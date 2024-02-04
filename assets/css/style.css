@@ -1108,21 +1108,28 @@ footer a {
     .design-section {
         padding-top: 50px;
     }
-    .rating-section,
     .service,
     .purchase,
     .design-section,
     .description {
         margin: 20px;
     }
+    .rating-section,
+    .rating-review {
+        width: fit-content;
+        margin-right: 40px;
+    }
+    .suggested-section {
+        width: fit-content;
+    }
     .suggested-head {
-        margin: 40px;
+        margin-right: 40px;
     }
     .suggested-body {
-        margin: 40px;
+        margin-right: 40px;
         display: grid;
-        grid-template-columns: repeat(1, minmax(350px, 1fr));
-        gap: 2px; /* Adjust the gap as needed */
+        grid-template-columns: repeat(1, minmax(50px, 1fr));
+        gap: 10px; /* Adjust the gap as needed */
     }   
     .swiper {
         width: 90%;
