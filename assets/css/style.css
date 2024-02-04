@@ -1089,6 +1089,9 @@ footer a {
         width: 15px;
         padding-top: 1px;
     }
+    .navbar-list {
+        margin-left: auto;
+    }
     /* swiper */
     .swiper {
         width: 100%;
