@@ -240,7 +240,6 @@ header{
 .main-body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  
-    gap: 1rem;
     padding: 20px;
 }
 /* Main-content styles */
@@ -1159,11 +1158,6 @@ footer a {
     }
     .navbar-list {
         margin-left: auto;
-    }
-    .side-content {
-        grid-column: span 1;
-        padding: 20px;
-        margin-top: 7rem;
     }
     .profile .menu {
         right: -8.5%; /* Adjust the left position for larger screens */
