@@ -759,8 +759,7 @@ header{
     background-color:#149c5d;
     color: white;
     margin: 20px;
-    width: 90%;
-    height: 48px;
+    padding: 20px;
     font-size: 1.2rem;
     font-weight: 600;
     align-items: center;
@@ -805,6 +804,7 @@ header{
 .share-links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
 }
@@ -1142,9 +1142,6 @@ footer a {
     .profile .menu {
         right: -8.5%; /* Adjust the left position for larger screens */
         transform: translateX(-50%);
-    }
-    .side-content {
-        margin-right: 20px;
     }
     footer p,
     footer a .footer-link{
