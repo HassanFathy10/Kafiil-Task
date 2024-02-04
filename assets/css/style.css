@@ -1143,6 +1143,9 @@ footer a {
         right: -8.5%; /* Adjust the left position for larger screens */
         transform: translateX(-50%);
     }
+    .side-content {
+        margin-right: 20px;
+    }
     footer p,
     footer a .footer-link{
         font-size: 1em;
