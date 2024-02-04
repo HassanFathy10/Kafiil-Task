@@ -731,6 +731,7 @@ header{
 .side-content {
     grid-column: span 2;
     margin-top: 7rem;
+    padding: 20px;
 }
 .side-content .card-list {
     display: flex;
@@ -867,24 +868,16 @@ header{
     font-size: 1rem;
 }
 /* footer */
-footer {
-    width: 100%;
-    box-sizing: border-box;
-  }
 .footer {
     background-color: black;
     padding: 50px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
 }
-footer p {
+.footer p {
     color: white;
     font-size: 1rem;
     font-weight: 700;
 }
-footer a {
+.footer a {
     text-decoration: none;
     color: #00ff00;
     font-weight: 700;
@@ -1114,12 +1107,9 @@ footer a {
         right: -10%; /* Adjust the left position for larger screens */
         transform: translateX(-50%);
     }
-    footer {
-        width: 100% !important;
-    }
     footer p,
     footer a .footer-link{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 @media (max-width: 320px) {
